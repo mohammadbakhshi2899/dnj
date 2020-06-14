@@ -4,6 +4,7 @@
     package="com.example.daneshjoyarshop">
 
     <application
+        android:name=".AndroidWrapper.G"
         android:fullBackupContent="false"
         android:allowBackup="true"
         android:icon="@drawable/ic_icon_app"
@@ -12,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity">
+        <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

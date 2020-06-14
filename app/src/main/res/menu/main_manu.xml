@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/question"
+        android:id="@+id/item_famous_question"/>
+    <item android:title="@string/CallMe"
+        android:id="@+id/item_call_me"/>
+    <item android:title="@string/reportProblem"
+        android:id="@+id/item_report_problem"/>
+    <item android:title="@string/ConnectWithMe"
+        android:id="@+id/item_about_me"/>
+</menu>
