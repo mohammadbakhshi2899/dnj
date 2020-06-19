@@ -7,5 +7,7 @@
     <string name="reportProblem">گذارش خطا</string>
     <string name="question">پرسش های متداول</string>
     <string name="CallMe">تماس با ما</string>
+    <string name="most_news">جدید ترین ها</string>
+    <string name="All">همه</string>
     <string name="todo">TODO</string>
 </resources>

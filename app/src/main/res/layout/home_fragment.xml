@@ -1,10 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/home"/>
-</LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/category_recycler_home_fragment"
+            android:layout_margin="8dp"
+
+            />
+
+        <com.example.daneshjoyarshop.View.customView.ProductView
+            android:layout_below="@id/category_recycler_home_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            app:textTitle="جدیدترین"
+            android:id="@+id/customViewProduct"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/img_banner_home_fragment"
+            android:scaleType="fitXY"
+            android:layout_margin="10dp"
+            android:src="@drawable/sell1"
+            android:layout_below="@id/customViewProduct"/>
+
+        <com.example.daneshjoyarshop.View.customView.ProductView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_below="@id/img_banner_home_fragment"
+            app:textTitle="تخفسفات داغ"
+            android:id="@+id/discount_recycler"/>
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/img_banner2_home_fragment"
+            android:layout_margin="10dp"
+            android:src="@drawable/sell2"
+            android:layout_below="@id/discount_recycler"/>
+        <com.example.daneshjoyarshop.View.customView.ProductView
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_below="@id/img_banner2_home_fragment"
+            app:textTitle="تخفسفات داغ"
+            android:id="@+id/offer_recycler"/>
+    </RelativeLayout>
+
+
+</ScrollView>

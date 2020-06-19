@@ -2,11 +2,13 @@ package com.example.daneshjoyarshop.View
 
 import android.annotation.SuppressLint
 import android.content.Context
+import android.util.Log
 import android.view.MenuItem
 import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.PopupMenu
 import android.widget.Toast
+import androidx.appcompat.widget.AppCompatImageView
 import androidx.fragment.app.Fragment
 import com.example.daneshjoyarshop.Modle.ModleMainActivity
 import com.example.daneshjoyarshop.R
@@ -24,7 +26,7 @@ class ViewMainActivity(
     FrameLayout(contextInstance) , PopupMenu.OnMenuItemClickListener{
 
     private val bottomNavigation: BottomNavigationView
-    private val imgMainMenu: ImageView
+    private val imgMainMenu: AppCompatImageView
 
     init {
         val mainView = inflate(context, R.layout.activity_main, this)
@@ -43,16 +45,26 @@ class ViewMainActivity(
     }
 
     fun onBottomClick(fragments: Map<String, Fragment>) {
-        bottomNavigation.setOnClickListener {
-            when (it.id) {
+        Log.i("IDIDID" , fragments.size.toString())
+        bottomNavigation.setOnNavigationItemSelectedListener{
+            Log.i("ITEMID" , it.itemId.toString())
+            when (it.itemId) {
                 R.id.item_account -> {
                     replaceFragment(fragments[ModleMainActivity.KEY_ACCOUNT_FRAGMENT] ?: Fragment())
+                    true
                 }
                 R.id.item_home -> {
                     replaceFragment(fragments[ModleMainActivity.KEY_HOME_FRAGMENT] ?: Fragment())
+                    true
                 }
                 R.id.item_shop -> {
+                    Log.i("CLICK" , "HOME")
+                    Toast.makeText(context , "szfngzdlf" , Toast.LENGTH_SHORT).show()
                     replaceFragment(fragments[ModleMainActivity.KEY_SHOP_FRAGMENT] ?: Fragment())
+                    true
+                }
+                else->{
+                    false
                 }
 
             }
