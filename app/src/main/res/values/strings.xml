@@ -1,10 +1,10 @@
 <resources>
-    <string name="app_name">daneshjoyarShop</string>
+    <string name="app_name">moonFoodShop</string>
     <string name="home">خانه</string>
     <string name="shop_basket">سبد خرید</string>
     <string name="account">حساب کاربری</string>
     <string name="ConnectWithMe">درباره ما</string>
-    <string name="reportProblem">گذارش خطا</string>
+    <string name="reportProblem">گزارش خطا</string>
     <string name="question">پرسش های متداول</string>
     <string name="CallMe">تماس با ما</string>
     <string name="most_news">جدید ترین ها</string>

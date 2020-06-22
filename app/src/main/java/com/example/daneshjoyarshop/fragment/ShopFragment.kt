@@ -1,4 +1,4 @@
-package com.example.daneshjoyarshop.Fragment
+package com.example.daneshjoyarshop.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,6 +13,6 @@ class ShopFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.shop_fragment, container , false)
+        return inflater.inflate(R.layout.fragment_shop, container , false)
     }
 }

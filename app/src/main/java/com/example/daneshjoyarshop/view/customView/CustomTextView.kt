@@ -1,4 +1,4 @@
-package com.example.daneshjoyarshop.View.customView
+package com.example.daneshjoyarshop.view.customView
 
 import android.content.Context
 import android.text.SpannableString

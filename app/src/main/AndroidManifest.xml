@@ -2,19 +2,22 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.daneshjoyarshop">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:name=".AndroidWrapper.G"
-        android:fullBackupContent="false"
+        android:name=".androidWrapper.G"
         android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:usesCleartextTraffic="true"
         android:icon="@drawable/ic_icon_app"
         android:label="@string/app_name"
         android:roundIcon="@drawable/ic_icon_app"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".Activity.MainActivity">
+        <activity android:name=".activity.ArchiveActivity"></activity>
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

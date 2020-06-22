@@ -1,15 +1,14 @@
-package com.example.daneshjoyarshop.Activity
+package com.example.daneshjoyarshop.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.MenuItem
 import android.view.View
 import android.widget.PopupMenu
 import androidx.fragment.app.Fragment
-import com.example.daneshjoyarshop.Modle.ModleMainActivity
-import com.example.daneshjoyarshop.Presenter.PresenterMainActivity
+import com.example.daneshjoyarshop.modle.ModleMainActivity
+import com.example.daneshjoyarshop.presenter.PresenterMainActivity
 import com.example.daneshjoyarshop.R
-import com.example.daneshjoyarshop.View.ViewMainActivity
+import com.example.daneshjoyarshop.view.ViewMainActivity
 import com.example.daneshjoyarshop.etc.Utitlity
 import com.example.daneshjoyarshop.etc.setFragment
 import org.koin.android.ext.android.inject

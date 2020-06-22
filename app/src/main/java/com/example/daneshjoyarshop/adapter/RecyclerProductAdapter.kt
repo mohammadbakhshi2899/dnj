@@ -1,4 +1,4 @@
-package com.example.daneshjoyarshop.Adapter
+package com.example.daneshjoyarshop.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,8 +8,8 @@ import androidx.appcompat.widget.AppCompatTextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.RecyclerView
 import com.example.daneshjoyarshop.R
-import com.example.daneshjoyarshop.Utitlity.PicassoUtitlity
-import com.example.daneshjoyarshop.View.customView.CustomTextView
+import com.example.daneshjoyarshop.utitlity.PicassoUtitlity
+import com.example.daneshjoyarshop.view.customView.CustomTextView
 import com.example.daneshjoyarshop.dataClass.DataProduct
 import kotlinx.android.synthetic.main.item_home_fragment_product_recycler.view.*
 import org.koin.standalone.KoinComponent
@@ -37,15 +37,16 @@ class RecyclerProductAdapter(private val data: List<DataProduct>) :
         private val image :AppCompatImageView = itemView.img_recycler_item
         private val title : AppCompatTextView = itemView.txt_title
 
+
         fun setView(item : DataProduct){
 
-            setter.setImage(item.imageAddress , image)
+            setter.setImage(item.imgAddress , image)
             title.text = item.title
             realPrice.text = item.price
-            if(item.haveDiscount)
+            if(item.discount)
             {
                 discountPrice.visibility = View.VISIBLE
-                realPrice.text = item.discountPrice
+                realPrice.text = item.priceDiscount
                 discountPrice.setCustomView(item.price)
             }else{
                 discountPrice.visibility = View.INVISIBLE

@@ -21,8 +21,8 @@
 
     <androidx.appcompat.widget.AppCompatTextView
         android:background="@drawable/background_product_view_title"
-        android:paddingTop="5dp"
-        android:paddingBottom="5dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
         android:paddingEnd="20dp"
         android:paddingStart="20dp"
         android:layout_width="wrap_content"

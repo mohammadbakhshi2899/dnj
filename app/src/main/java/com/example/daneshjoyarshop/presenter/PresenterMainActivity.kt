@@ -1,7 +1,7 @@
-package com.example.daneshjoyarshop.Presenter
+package com.example.daneshjoyarshop.presenter
 
-import com.example.daneshjoyarshop.Modle.ModleMainActivity
-import com.example.daneshjoyarshop.View.ViewMainActivity
+import com.example.daneshjoyarshop.modle.ModleMainActivity
+import com.example.daneshjoyarshop.view.ViewMainActivity
 import com.example.daneshjoyarshop.etc.BaseLifeCycle
 
 class PresenterMainActivity(

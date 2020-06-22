@@ -4,7 +4,7 @@
     android:id="@+id/title_category_name"
     android:orientation="vertical"
     android:layout_width="wrap_content"
-    android:textColor="@color/White"
+    android:textColor="@color/Black"
     android:background="@drawable/background_item_recycler_category_home_fragment"
     android:paddingStart="15dp"
     android:paddingEnd="15dp"
@@ -13,7 +13,7 @@
     android:layout_margin="5dp"
     xmlns:tools="http://schemas.android.com/tools"
     tools:text="محمد"
-    android:textSize="18sp"
+    android:textSize="16sp"
     android:layout_height="wrap_content">
 
 </androidx.appcompat.widget.AppCompatTextView>

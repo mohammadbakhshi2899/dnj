@@ -12,11 +12,14 @@ class TestHomeFragment {
                 arrayList.add(
                     DataProduct(
                         item,
-                        "15000",
+                        "student",
+                        "https://florinafood.gr/imgs/paper-planes.jpg",
                         "3500",
                         true,
-                        "https://florinafood.gr/imgs/paper-planes.jpg",
-                        "student"
+                        "15000 ",
+                        3.5f ,
+                        ""
+
                     )
                 )
             }
@@ -27,7 +30,7 @@ class TestHomeFragment {
             return arrayListOf(
                 "دسر ها",
                 "فینگر فود ها",
-                "دسر هاغذا ها",
+                "غذا ها",
                 "شیرینی ها",
                 "پیش غذا ها",
                 "کیک ها"

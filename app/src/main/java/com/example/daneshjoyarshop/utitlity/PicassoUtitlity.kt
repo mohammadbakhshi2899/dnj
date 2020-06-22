@@ -1,4 +1,4 @@
-package com.example.daneshjoyarshop.Utitlity
+package com.example.daneshjoyarshop.utitlity
 
 import android.widget.ImageView
 import com.example.daneshjoyarshop.R

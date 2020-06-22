@@ -1,9 +1,8 @@
-package com.example.daneshjoyarshop.Modle
+package com.example.daneshjoyarshop.modle
 
-import androidx.fragment.app.Fragment
-import com.example.daneshjoyarshop.Fragment.AccountFragment
-import com.example.daneshjoyarshop.Fragment.HomeFragment
-import com.example.daneshjoyarshop.Fragment.ShopFragment
+import com.example.daneshjoyarshop.fragment.AccountFragment
+import com.example.daneshjoyarshop.fragment.HomeFragment
+import com.example.daneshjoyarshop.fragment.ShopFragment
 import org.koin.standalone.KoinComponent
 import org.koin.standalone.inject
 

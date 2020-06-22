@@ -1,16 +1,15 @@
-package com.example.daneshjoyarshop.View
+package com.example.daneshjoyarshop.view
 
 import android.annotation.SuppressLint
 import android.content.Context
 import android.util.Log
 import android.view.MenuItem
 import android.widget.FrameLayout
-import android.widget.ImageView
 import android.widget.PopupMenu
 import android.widget.Toast
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.fragment.app.Fragment
-import com.example.daneshjoyarshop.Modle.ModleMainActivity
+import com.example.daneshjoyarshop.modle.ModleMainActivity
 import com.example.daneshjoyarshop.R
 import com.example.daneshjoyarshop.etc.Utitlity
 import com.example.daneshjoyarshop.etc.setFragment
@@ -45,9 +44,9 @@ class ViewMainActivity(
     }
 
     fun onBottomClick(fragments: Map<String, Fragment>) {
-        Log.i("IDIDID" , fragments.size.toString())
+        Log.i("ID_ID_ID" , fragments.size.toString())
         bottomNavigation.setOnNavigationItemSelectedListener{
-            Log.i("ITEMID" , it.itemId.toString())
+            Log.i("ITEM_ID" , it.itemId.toString())
             when (it.itemId) {
                 R.id.item_account -> {
                     replaceFragment(fragments[ModleMainActivity.KEY_ACCOUNT_FRAGMENT] ?: Fragment())

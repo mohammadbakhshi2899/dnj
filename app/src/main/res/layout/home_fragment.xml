@@ -19,40 +19,42 @@
 
             />
 
-        <com.example.daneshjoyarshop.View.customView.ProductView
+        <com.example.daneshjoyarshop.view.customView.ProductView
             android:layout_below="@id/category_recycler_home_fragment"
             android:layout_width="match_parent"
             android:layout_height="280dp"
             app:textTitle="جدیدترین"
-            android:id="@+id/customViewProduct"/>
+            android:id="@+id/new_product_recycler"/>
+
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:id="@+id/img_banner_home_fragment"
+            android:id="@+id/img_banner1_home_fragment"
             android:scaleType="fitXY"
             android:layout_margin="10dp"
-            android:src="@drawable/sell1"
-            android:layout_below="@id/customViewProduct"/>
+            android:layout_below="@id/new_product_recycler"/>
 
-        <com.example.daneshjoyarshop.View.customView.ProductView
+        <com.example.daneshjoyarshop.view.customView.ProductView
             android:layout_width="match_parent"
             android:layout_height="280dp"
-            android:layout_below="@id/img_banner_home_fragment"
-            app:textTitle="تخفسفات داغ"
+            android:layout_below="@id/img_banner1_home_fragment"
+            app:textTitle="تخفیفات داغ"
             android:id="@+id/discount_recycler"/>
+
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="match_parent"
             android:layout_height="250dp"
             android:id="@+id/img_banner2_home_fragment"
             android:layout_margin="10dp"
-            android:src="@drawable/sell2"
             android:layout_below="@id/discount_recycler"/>
-        <com.example.daneshjoyarshop.View.customView.ProductView
+
+        <com.example.daneshjoyarshop.view.customView.ProductView
             android:layout_width="match_parent"
             android:layout_height="280dp"
             android:layout_below="@id/img_banner2_home_fragment"
-            app:textTitle="تخفسفات داغ"
-            android:id="@+id/offer_recycler"/>
+            app:textTitle="پر فروش ترین ها"
+            android:id="@+id/top_selling_recycler"/>
+
     </RelativeLayout>
 
 
